@@ -1,0 +1,5 @@
+project: bunt
+target: fuzz-buffer
+
+cmds:
+    - cmd: /fuzz_buffer
