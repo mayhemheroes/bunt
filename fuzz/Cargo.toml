@@ -10,7 +10,7 @@ cargo-fuzz = true
 honggfuzz = "0.5.55"
 
 [dependencies.bunt]
-path = "../.."
+path = ".."
 
 [workspace]
 members = ["."]
