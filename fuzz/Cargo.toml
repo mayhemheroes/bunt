@@ -1,0 +1,24 @@
+[package]
+name = "fuzz-bunt"
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+honggfuzz = "0.5.55"
+
+[dependencies.bunt]
+path = ".."
+
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "fuzz_buffer"
+path = "fuzz_targets/fuzz_buffer.rs"
+
+[[bin]]
+name = "fuzz_println"
+path = "fuzz_targets/fuzz_println.rs"
